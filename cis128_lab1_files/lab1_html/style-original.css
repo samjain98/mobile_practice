@@ -1,0 +1,79 @@
+/* normalize.css 2011-07-06T20:20 UTC //github.com/jonathantneal/normalize.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}html{cursor:default;font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,form,input,button,select,textarea{font-size:100%;margin:0}a,a:active,a:hover{outline:none}a:focus{outline:thin dotted}abbr{_border-bottom:expression(this.title ? '1px dotted':'none')}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#FF0;color:#000}pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small,sub,sup{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}nav ul{list-style:none}audio[controls],canvas,video{display:inline-block;*display:inline}audio{display:none;_display:expression(this.controls ? 'inline':'none');*zoom:1}audio[controls]{display:inline-block}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}legend{*margin-left:-7px}button,input,select,textarea{-webkit-appearance:none;border-radius:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;_overflow:expression(this.type == 'button|reset|submit' ? 'visible':'')}button,input[type="button"],input[type="reset"],input[type="submit"]{overflow:visible}input[type="checkbox"],input[type="radio"]{box-sizing:border-box}input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body {height:100%}
+html{background:white;color:black}
+body{overflow;auto;font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;padding:0;margin:0 auto;width:960px;line-height:1.75;word-spacing:0.1em;
+      }
+a{background:transparent;text-decoration:none;border-bottom:1px dotted}
+a:hover{border-bottom:1px solid}
+a:link{color:#1b67c9}
+a:visited{color:darkorchid}
+h1,h2,h3,h4,h5,h6 {font-family:"Nimbus Sans L","Helvetica Neue",Helvetica,Arial,sans-serif}
+h1 a,h2 a,h3 a{color:inherit !important}
+h2,h3,p{margin:1.75em 0}
+h1,h2,h3{font-size:medium}
+h1{letter-spacing:1em;text-align:center;margin:0}
+header{background:black;color:white;margin:0;padding:1.75em 0}
+header p{text-align:center;font-size:medium;line-height:2.154}
+header a{color:white}
+#arc th,#arc td{list-style:none;margin:0;padding:0}
+#arc th{text-align:right}
+footer,.c{text-align:center;clear:both}
+#arc th{padding:0 1.75em 0 0;vertical-align:baseline}
+#arc{border-collapse:collapse}
+.post-date{float:right;font-size:small;margin:2px 0 0 0}
+#nav ul{margin:0;padding:0 1em 0 0;text-align:center}
+#nav li{display:inline;padding-left:1em}
+.sectionSign:before{content:'\00A7'}
+.left {width: 250px;padding:14px  10px 0;height:100%}
+.right {float:right;width: 250px;padding:14px 10px 0;}
+.center_col {padding:0 0 16px;background-color:white;width:460px;padding:14px}
+.column {float:left}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 20px;
+    line-height: 1.399999999;
+  }
+  .left,.right,.center_col {width:100%}
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+}
+/* applied when the screen is larger than 1024px */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  .jumbotron h1 {
+    font-size: 48px;
+  }
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  background-color:#fafafa;
+  padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;} 
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}
